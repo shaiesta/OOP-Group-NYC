@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /* FINAL PROJECT: RUTGERS ROUNDABOUT 
  * 
- * @author Beatrice Trinidad, Johnny Manzano, Renz Sarayba, Chantelle Glowacki, Jonathan Paragas
+ * @author Daniell, Kayla, Shaiesta, Raqia, Julia - Using: Beatrice Trinidad, Johnny Manzano, Renz Sarayba, Chantelle Glowacki, Jonathan Paragas
  *
  */
 public class PlayGame {
@@ -25,15 +25,20 @@ public class PlayGame {
 			 	boolean done = false; // Boolean to check if a valid input was actually done.
 			 	
 			 	System.out.println("\nWelcome to Rutgers Roundabout! \n"
-					    + "You are interested in Rutgers University and want to get accepted next semester. \n"
-					    + "Let's go on a journey around campus to see if you're good enough to be a Scarlet Knight. \n \n"
-					    + "There will be different things to do on each campus. \n"
-					    + "Either enter YES or NO, and hopefully these tasks will bring you closer or farther from being admitted to Rutgers. \n"
-					    + "Correct answers will earn you a random amount of 1-10 points. \n"
-					    + "Incorrect answers will deduct a random amount of 1-10 points. \n"
-					    + "You must gain at least 15 points to gain admission! \n \n"
-					    + "If you win, you will be admitted to Rutgers! \n"
-					    + "If you lose, you will unfortunately have to send another application. :( \n") ;
+					    + "It's a beautiful morning and the first day of your internship. \n"
+					    + "As an ITI student at Rutgers, you decided to expand your horizons and accept an offer in NYC. \n \n"
+					    + "Excited for the day ahead, you look at the clock that now reads 5:00 a.m.. \n"
+					    + "Work starts at 8:00 a.m.. \n"
+					    + "So you better get ready and head out soon to reach midtown Manhattan in time! \n"
+					    + "As you get ready, you excitedly think about the day to come. \n"
+					    + "You did some research last night on how to get to work and found a few options.\n \n"
+					    + "Once you reach Penn Station at NYC, you can either \n"
+				            + "Take the subway - which is a reasonable option \n"
+					    + "Grab a taxi - which seems like the fastest, yet most expensive option \n"
+					    + "Or take a walk and enjoy the city air - which will take time but be enjoyable \n"
+				            + "You glance at the clock once more and notice that it's nearly 6:00am! \n"
+					    + "No time to grab breakfast...maybe you'll get something in the city. \n"   
+					    + "It's time to start your journey!. :( \n") ;
 		
 			 	while (!done) {
 			 		try {
