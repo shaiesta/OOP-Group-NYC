@@ -10,4 +10,8 @@ Danielle M
 Julia C
 
 
-We would like to note that we are utilizing the code created by Beatrice Trinidad, Johnny Manzano, Renz Sarayba, Chantelle Glowacki, Jonathan Paragas, whom had a similar idea and code implementation to what we would like to achieve. All code in this repository is a collaboration of their code as well as original code created by us. 
+We would like to note that we are utilizing the code created by 
+Beatrice Trinidad, Johnny Manzano, Renz Sarayba, Chantelle Glowacki, Jonathan Paragas, 
+whom had a similar idea and code implementation to what we would like to achieve. All 
+code in this repository is a collaboration of their code as well as original code 
+created by us. 
