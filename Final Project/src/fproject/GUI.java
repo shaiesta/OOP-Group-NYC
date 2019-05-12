@@ -62,8 +62,10 @@ public class GUI extends Inventory {
 		welcomeMessage.setFont(regFont);
 		welcomeMessage.setLineWrap(true);
 		welcomePanel.add(welcomeMessage);
-		welcomeMessage.setText("Hello "
-				+ "\nwelcome ");
+		welcomeMessage.setText("It’s a beautiful morning and the first day of your internship! Congratulations!"
+				+ "\nAs an ITI student at Rutgers, you decided to expand your horizons and accept an offer in NYC."
+				+ "\nExcited for the day ahead, you look at the clock that now reads 5:00 a.m."
+				+ "\nWork starts at 8:00 a.m. so you better get ready and head out soon to reach midtown Manhattan on time!");
 		//add text to panel
 		
 		startPanel = new JPanel();
