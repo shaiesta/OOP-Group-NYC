@@ -65,7 +65,16 @@ public class GUI extends Inventory {
 		welcomeMessage.setText("It’s a beautiful morning and the first day of your internship! Congratulations!"
 				+ "\nAs an ITI student at Rutgers, you decided to expand your horizons and accept an offer in NYC."
 				+ "\nExcited for the day ahead, you look at the clock that now reads 5:00 a.m."
-				+ "\nWork starts at 8:00 a.m. so you better get ready and head out soon to reach midtown Manhattan on time!");
+				+ "\nWork starts at 8:00 a.m. so you better get ready and head out soon to reach midtown Manhattan on time!"
+				+ "\nAs you get ready, you excitedly think about the day to come."
+				+ "\nYou did some research last night on how to get to work and found a few options."
+				+ "\nOnce you reach Penn Station at NYC, you can:"
+				+ "\nTake the subway - which was a reasonable option,"
+				+ "\nGrab a taxi - which seemed like the fastest, yet pricey option,"
+				+ "n\Or take a walk and enjoy the city air."
+				+ "\nYou glance at the clock once more and notice that it’s nearly 6:00 a.m.!"
+				+ "n\No time to grab breakfast… maybe you’ll get something in the city."
+				+ "n\It’s time to start your journey!");
 		//add text to panel
 		
 		startPanel = new JPanel();
