@@ -6,10 +6,10 @@ public class BedroomText {
 	private String text3;
 	
 	public BedroomText() {
-		this.text = "You in your room \npick the best combination";
-		this.text2 = "good choice, you are ready to leave for the bus"
-				+ "\n you have $30 and will now be able to check the time";
-		this.text3 = "you wont need that";
+		this.text = "You are in your room \npick the best combination";
+		this.text2 = "Good choice, you are ready to leave for the bus."
+				+ "\n You have $30 and will now be able to check the time";
+		this.text3 = "You wont need that";
 	}
 	
 	public String getText() {
