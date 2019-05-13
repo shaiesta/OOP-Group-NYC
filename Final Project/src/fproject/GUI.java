@@ -71,10 +71,10 @@ public class GUI extends Inventory {
 				+ "\nOnce you reach Penn Station at NYC, you can:"
 				+ "\nTake the subway - which was a reasonable option,"
 				+ "\nGrab a taxi - which seemed like the fastest, yet pricey option,"
-				+ "n\Or take a walk and enjoy the city air."
+				+ "\nOr take a walk and enjoy the city air."
 				+ "\nYou glance at the clock once more and notice that it’s nearly 6:00 a.m.!"
-				+ "n\No time to grab breakfast… maybe you’ll get something in the city."
-				+ "n\It’s time to start your journey!");
+				+ "\nNo time to grab breakfast… maybe you’ll get something in the city."
+				+ "\nIt’s time to start your journey!");
 		//add text to panel
 		
 		startPanel = new JPanel();
