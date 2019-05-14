@@ -1,7 +1,7 @@
 public class Brower extends StartAdventure {
 	
 	public String placeText(){
-		return "\nWe are by Brower Commons, the food is known to be pretty bad.\n"
+		return "\nLooks like we're at Brower Commons now! The food here seems to have a bad rep., but eating here is convenient.\n"
 				+"Do you want to eat here? \n";
 	}
 	
