@@ -1,12 +1,12 @@
 public class Alex extends StartAdventure{
 	
 	public String placeText(){
-		return "\nYou reach College Ave by Alexander Library and meet up with your friends. \n"
-				+"Do you want to check out a book? \n";
+		return "\nYou have reached College Ave by Alexander Library and decide to meet up with some friends! \n"
+				+"Is there a book you would like to check out? \n";
 	}
 	
 	public String correctText(){
-		return "Woah, the book you took ended up being the last copy available!";
+		return "Good choice! but unfortunately it looks like the book you took ended up being the last copy available!";
 	}
 	
 	public String incorrectText(){
