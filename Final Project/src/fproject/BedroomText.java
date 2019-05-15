@@ -6,10 +6,11 @@ public class BedroomText {
 	private String text3;
 	
 	public BedroomText() {
-		this.text = "You are in your room \npick the best combination";
+		this.text = "You are in your beedroom and need some things for your trip but you can only fit two more items in your bag \n"
+				+ "Pick the best combination you think you will need to get to work on time!";
 		this.text2 = "Good choice, you are ready to leave for the bus."
-				+ "\n You have $30 and will now be able to check the time";
-		this.text3 = "You wont need that";
+				+ "\nYou have $30 and will now be able to check the time";
+		this.text3 = "Sorry, you wont need that! Please try again.";
 	}
 	
 	public String getText() {

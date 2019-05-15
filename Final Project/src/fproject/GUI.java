@@ -18,6 +18,7 @@ public class GUI extends Inventory {
 	JLabel titleName, inventoryLabel, inventory, timeLabel, time;
 	Font titleFont = new Font("Helvetica", Font.BOLD + Font.ITALIC, 80);
 	Font regFont = new Font("Helvetica", Font.PLAIN, 25);
+	Font welcomeFont = new Font("Helvetica", Font.PLAIN, 15);
 	JButton startButton, choiceA, choiceB, choiceC, choiceD;
 	JTextArea welcomeMessage, mainTextArea;
 	String position;
@@ -33,7 +34,7 @@ public class GUI extends Inventory {
 	}
 	public GUI() {
 		window = new JFrame();
-		window.setSize(800, 600);
+		window.setSize(800, 700);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.getContentPane().setBackground(Color.cyan);
 		window.setLayout(null);
@@ -51,34 +52,33 @@ public class GUI extends Inventory {
 		titleName.setFont(titleFont);
 		
 		welcomePanel = new JPanel();
-		welcomePanel.setBounds(150, 200, 600, 100);
+		welcomePanel.setBounds(150, 200, 500, 300);
 		welcomePanel.setBackground(Color.cyan);
 		con.add(welcomePanel);
 		
 		welcomeMessage = new JTextArea();
-		welcomeMessage.setBounds(150, 200, 600, 100); 
+		welcomeMessage.setBounds(150, 200, 500, 300); 
 		welcomeMessage.setBackground(Color.cyan);
 		welcomeMessage.setForeground(Color.black);
-		welcomeMessage.setFont(regFont);
+		welcomeMessage.setFont(welcomeFont);
 		welcomeMessage.setLineWrap(true);
+		welcomeMessage.setWrapStyleWord(true);
 		welcomePanel.add(welcomeMessage);
 		welcomeMessage.setText("It’s a beautiful morning and the first day of your internship! Congratulations!"
 				+ "\nAs an ITI student at Rutgers, you decided to expand your horizons and accept an offer in NYC."
 				+ "\nExcited for the day ahead, you look at the clock that now reads 5:00 a.m."
 				+ "\nWork starts at 8:00 a.m. so you better get ready and head out soon to reach midtown Manhattan on time!"
-				+ "\nAs you get ready, you excitedly think about the day to come."
-				+ "\nYou did some research last night on how to get to work and found a few options."
+				+ "\nAs you get ready, you excitedly think about the day to come. You did some research last night on how to get to work and found a few options."
 				+ "\nOnce you reach Penn Station at NYC, you can:"
 				+ "\nTake the subway - which was a reasonable option,"
 				+ "\nGrab a taxi - which seemed like the fastest, yet pricey option,"
 				+ "\nOr take a walk and enjoy the city air."
-				+ "\nYou glance at the clock once more and notice that it’s nearly 6:00 a.m.!"
-				+ "\nNo time to grab breakfast… maybe you’ll get something in the city."
+				+ "\nYou glance at the clock once more and notice that it’s nearly 5:00 a.m.! No time to grab breakfast… maybe you’ll get something in the city."
 				+ "\nIt’s time to start your journey!");
 		//add text to panel
 		
 		startPanel = new JPanel();
-		startPanel.setBounds(300, 400, 200, 100);
+		startPanel.setBounds(300, 500, 200, 100);
 		startPanel.setBackground(Color.cyan);
 		startButton = new JButton("Start");
 		startButton.setFont(regFont);
@@ -111,6 +111,7 @@ public class GUI extends Inventory {
 		mainTextArea.setForeground(Color.black);
 		mainTextArea.setFont(regFont);
 		mainTextArea.setLineWrap(true);
+		mainTextArea.setWrapStyleWord(true);
 		mainTextPanel.add(mainTextArea);
 		//add text to panel
 		
@@ -233,7 +234,7 @@ public class GUI extends Inventory {
 	public void nbStation() {
 		position = "station";
 		time.setText("5:45am");
-		TrainText myObj = new TrainText();
+		BedroomText myObj = new TrainText();
 		mainTextArea.setText(myObj.getText());
 		choiceA.setText("Train");
 		choiceB.setText("Bus");
@@ -244,7 +245,7 @@ public class GUI extends Inventory {
 	public void train() {
 		position = "train";
 		time.setText("7:00am");
-		TrainText myObj = new TrainText();
+		BedroomText myObj = new TrainText();
 		mainTextArea.setText(myObj.getText2());
 		choiceA.setText("Continue");
 		choiceB.setText("");
@@ -259,9 +260,9 @@ public class GUI extends Inventory {
 	public void bus() {
 		position = "bus";
 		time.setText("7:00am");
-		TrainText myObj = new TrainText();
+		BedroomText myObj = new TrainText();
 		mainTextArea.setText(myObj.getText3());
-		choiceA.setText("continue");
+		choiceA.setText("Continue");
 		choiceB.setText("");
 		choiceC.setText("");
 		choiceD.setText("");
@@ -273,7 +274,7 @@ public class GUI extends Inventory {
 	public void city() {
 		position = "city";
 		time.setText("7:00am");
-		CityText myObj = new CityText();
+		BedroomText myObj = new CityText();
 		mainTextArea.setText(myObj.getText());
 		choiceA.setText("Take a Taxi");
 		choiceB.setText("Take the Subway");
@@ -283,7 +284,7 @@ public class GUI extends Inventory {
 	public void taxi() {
 		position = "taxi";
 		time.setText("7:45am");
-		CityText myObj = new CityText();
+		BedroomText myObj = new CityText();
 		mainTextArea.setText(myObj.getText2());
 		choiceA.setText("Start Over");
 		choiceB.setText("");
@@ -296,7 +297,7 @@ public class GUI extends Inventory {
 	public void subway() {
 		position = "subway";
 		time.setText("7:15am");
-		CityText myObj = new CityText();
+		BedroomText myObj = new CityText();
 		mainTextArea.setText(myObj.getText3());
 		choiceA.setText("Get Food");
 		choiceB.setText("Walk the Park");
@@ -319,7 +320,7 @@ public class GUI extends Inventory {
 	}
 	public void food() {
 		position = "food";
-		ParkText myObj = new ParkText();
+		BedroomText myObj = new ParkText();
 		mainTextArea.setText(myObj.getText());
 		choiceA.setText("Donut");
 		choiceB.setText("Coffee");
@@ -329,7 +330,7 @@ public class GUI extends Inventory {
 	public void park() {
 		position = "park";
 		time.setText("7:50am");
-		ParkText myObj = new ParkText();
+		BedroomText myObj = new ParkText();
 		mainTextArea.setText(myObj.getText2());
 		choiceA.setText("Start Over");
 		choiceB.setText("");
@@ -339,7 +340,7 @@ public class GUI extends Inventory {
 	public void donut() {
 		position = "donut";
 		time.setText("7:35am");
-		ParkText myObj = new ParkText();
+		BedroomText myObj = new ParkText();
 		mainTextArea.setText(myObj.getText3());
 		choiceA.setText("Walk");
 		choiceB.setText("Taxi");
@@ -367,7 +368,7 @@ public class GUI extends Inventory {
 	public void donutWalk() {
 		position = "donutWalk";
 		time.setText("8:10am");
-		WorkText myObj = new WorkText();
+		BedroomText myObj = new WorkText();
 		mainTextArea.setText(myObj.getText());
 		choiceA.setText("Start Over");
 		choiceB.setText("");
@@ -378,7 +379,7 @@ public class GUI extends Inventory {
 	public void donutTaxi() {
 		position = "donutTaxi";
 		time.setText("8:00am");
-		WorkText myObj = new WorkText();
+		BedroomText myObj = new WorkText();
 		mainTextArea.setText(myObj.getText2());
 		choiceA.setText("");
 		choiceB.setText("");
@@ -391,7 +392,7 @@ public class GUI extends Inventory {
 	public void coffeeWalk() {
 		position = "coffeeWalk";
 		time.setText("7:30am");
-		WorkText myObj = new WorkText();
+		BedroomText myObj = new WorkText();
 		mainTextArea.setText(myObj.getText3());
 		choiceA.setText("");
 		choiceB.setText("");
